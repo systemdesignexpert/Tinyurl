@@ -1,0 +1,18 @@
+﻿@model TinyURLViewModel
+@{
+    ViewData["Title"] = "Tiny URL";
+}
+
+<style>
+    p {
+      color: yellow;
+      text-indent: 30px;
+    }
+</style>
+
+@if (Model.ShowURL)
+{
+    <p>
+        <strong>Tiny URL:</strong> <code>@Model.url</code>
+    </p>
+}

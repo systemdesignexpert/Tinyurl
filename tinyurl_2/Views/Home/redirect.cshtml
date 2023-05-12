@@ -1,0 +1,11 @@
+﻿@model RedirectURLViewModel
+@{
+    ViewData["Title"] = "Redirecting URL";
+}
+
+@if (Model.ShowURL)
+{
+    <p>
+        <strong>Redirect URL:</strong> <code>@Model.url</code>
+    </p>
+}
