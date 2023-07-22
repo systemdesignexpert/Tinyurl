@@ -8,7 +8,7 @@ namespace tinyurl_2.Controllers
 	{
         private Container container;
 
-        private string connString = "AccountEndpoint=https://tinyurlcosmos.documents.azure.com:443/;AccountKey=HwQmHpYGu7aH1oNWUrcL4JEB2jbaAl3JxmWihS2XB9M5LAB9zyQzCWDVCrb5ZCjGfzsj8RUN2agdACDb2LvECA==";
+        private string connString = Secrets.COSMOS_CONN_STRING;
         private string dbId = "tinyurlstore";
         private string containerId = "urltocode";
 
